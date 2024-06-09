@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  background-color: #f8f8f8;
+}
+nav {
+  height: 11vh;
+  width: 100%;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+nav h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  width: 20%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  /* background-color: yellowgreen; */
+}
+nav a {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  width: 27%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+  border-right: 2px solid black;
+  transition: all 0.3s linear;
+}
+nav a::after {
+  content: "\2197";
+  transition: all 0.5s linear;
+  padding: 10px;
+  display: none;
+}
+nav a:hover::after {
+  display: initial;
+}
+nav a:hover {
+  background-color: #e5e5e5;
+}
+nav p {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  width: 10%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+
+#center {
+  width: 100%;
+  height: 90%;
+  padding: 2.8vw;
+  /* background-color: red; */
+  position: relative;
+}
+#content {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  position: relative;
+}
+
+#content video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  padding: 1.6vw;
+  background-color: rgba(0, 0, 0, 0.172);
+  backdrop-filter: blur(10px);
+}
+#overlayoverlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 1vw;
+}
+#overlayoverlay h1 {
+  font-size: 5vw;
+  font-family: sans-serif;
+  font-weight: 900;
+  letter-spacing: -5px;
+  line-height: 5vw;
+}
+#overlayoverlay h2 {
+  font-size: 2vw;
+  font-family: serif;
+  padding: 1.4vw 2.1vw;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+#overlayoverlayoverlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #fff;
+  padding: 1vw 0;
+}
+#overlayoverlayoverlay h4,
+h3 {
+  font-weight: 500;
+  font-size: 1.3vw;
+  color: #fff;
+}
+#scroll {
+  height: 35vh;
+  width: 100%;
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+  display: inline-block;
+  padding: 1vw;
+  animation-name: scroll;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#scroll img {
+  /* display: none; */
+  height: 100%;
+  width: 16%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0.2vw;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#alphabet {
+  width: 100%;
+  height: 10vh;
+  margin-top: 3vw;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2vw;
+  border-top: solid 2px #000;
+  border-bottom: solid 1px #000;
+}
+#alphabet h5 {
+  font-size: 1.6vw;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 3px;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+#alphabet h6 {
+  font-size: 0.8vw;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50%;
+  padding: 0.5vw 0.7vw;
+  /* background-color: yellow; */
+  border: 1px solid #00000000;
+  transition: all 0.2s ease;
+}
+#alphabet h6:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #eeeeee;
+}
+#page2 {
+  height: 110vh;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 6vh;
+  padding: 4vh 5vw;
+}
+
+#page2 #middle {
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+}
+#page2 #middle #left {
+  height: 100%;
+  width: 56%;
+  /* background-color: aqua; */
+}
+#page2 #middle #right {
+  height: 90%;
+  width: 40%;
+  /* background-color: green; */
+}
+#page2 #middle #left #top {
+  width: 100%;
+  height: 90%;
+  /* background-color: blueviolet; */
+  background-image: url(./images/7.jfif);
+  background-size: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+#page2 #middle #left h1 {
+  font-size: 4vw;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: 0.5vw 0vw;
+}
+#page2 #middle #right #top {
+  width: 100%;
+  height: 74%;
+  /* background-color: brown; */
+  background-image: url(./images/8.jfif);
+  background-size: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+#page2 #middle #right #bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3vh;
+}
+#page2 #middle #right #bottom #left{
+  font-size: 1.9vw;
+}
+#page3{
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  padding: 4vh 5vw;
+}
+#page3 #middle{
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+}
+#page3 #middle #left {
+  height: 100%;
+  width: 40%;
+  /* background-color: aqua; */
+  position: relative;
+}
+#page3 #middle #left #top{
+  width: 100%;
+  height: 80%;
+  background-image: url(./images/9.jfif);
+  object-fit: cover;
+  background-position: center;
+}
+
+#page3 #middle #left #bottom{
+  font-size: 1.29vw;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+}
+#page3 #middle #right {
+  height: 100%;
+  width: 56%;
+  /* background-color: green; */
+  background-image: url(images/10.jfif);
+}
+#page4{
+  height: 90vh;
+  width: 100%;
+  /* background-color: red; */
+  padding: 4vh 5vw;
+
+}
+#page4 #middle{
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  background-image: url(./images/11.jpg);
+  background-size: 100%;
+  object-fit: cover;
+  background-position: center;
+}
