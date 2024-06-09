@@ -323,3 +323,122 @@ h3 {
   object-fit: cover;
   background-position: center;
 }
+#page5{
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  padding: 4vh 5vw;
+}
+#page5>h1{
+  font-size: 3vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: -0.2vw;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+.elem{
+  height:16vh;
+  width: 100%;
+  /* background-color: yellow; */
+  border-top:solid black 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 2vw;
+  position: relative;
+}
+.elem img{
+  position: absolute;
+  width: 8vw;
+  height: 14vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  left: 25%;
+}
+.elem:nth-last-child(1){
+  border-bottom: 2px solid black;
+}
+.elem h5{
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  width: 6%; 
+  font-weight: 200;
+}
+
+.elem .elem-right{
+  width: 45%;
+}
+.elem .elem-right h2{
+  font-size: 2.3vw;
+  font-weight: 500;
+  line-height: 3.5vw;
+}
+.elem .elem-right p{
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+}
+#exclusive h2{
+  font-size: 2.3vw;
+  font-weight: 500;
+  line-height: 3vw;
+  line-height: 3.5vw;
+}
+#exclusive p{
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+#marque{
+  width: 100%;
+  padding: 0.8vw;
+  /* background-color: brown; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-top: solid 2px #000;
+  border-bottom: solid 2px #000;
+}
+#marque h1{
+  display: inline-block;
+  font-size: 3vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.1vw;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  margin-right: 30px;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes animation {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(-100% - 32px));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+}
