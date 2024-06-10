@@ -24,6 +24,9 @@ nav {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+nav i {
+  display: none;
+}
 nav h1 {
   display: flex;
   align-items: center;
@@ -616,10 +619,238 @@ footer #footer #middle #bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 footer #footer #middle #bottom h4 {
   font-size: 1vw;
   font-weight: 200;
   color: #171717;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 20px;
+  }
+  nav {
+    height: 8vh;
+    justify-content: space-between;
+  }
+  nav i {
+    display: initial;
+    margin-right: 2vw;
+    font-weight: 600;
+  }
+  nav h1 {
+    font-size: 1.4rem;
+  }
+  nav h1::after {
+    font-size: 7px;
+    top: 28%;
+    right: 5%;
+  }
+  nav h1::before {
+    font-size: 5px;
+  }
+  nav a {
+    display: none;
+  }
+  nav a::after {
+    display: none;
+  }
+  nav a:hover::after {
+    display: none;
+  }
+  nav p {
+    display: none;
+  }
+  #center {
+    width: 100%;
+    height: 50%;
+  }
+  #overlay {
+    height: 35%;
+    padding: 4vw;
+  }
+  #overlayoverlay {
+    margin-bottom: 3.5vw;
+  }
+  #overlayoverlay h1 {
+    font-size: 6.5vw;
+    letter-spacing: -1px;
+    line-height: 7vw;
+  }
+  #overlayoverlay h2 {
+    font-size: 7vw;
+    padding: 1.4vw 3.5vw;
+  }
+
+  #overlayoverlayoverlay {
+    padding: 2vw 0;
+  }
+  #overlayoverlayoverlay h4,
+  h3 {
+    font-size: 2.5vw;
+  }
+  #scroll {
+    height: 10vh;
+  }
+  #alphabet {
+    height: 6vh;
+    gap: 0.6vw;
+  }
+  #alphabet h5 {
+    font-size: 3vw;
+  }
+  #alphabet h6 {
+    font-size: 1.5vw;
+    padding: 0.5vw 0.6vw;
+  }
+  #page2 {
+    height: 100%;
+    margin-top: 0;
+  }
+
+  #page2 #middle {
+    display: flex;
+    justify-content: space-between;
+  }
+  #page2 #middle #left {
+    width: 55%;
+    height: 70%;
+  }
+  #page2 #middle #right {
+    height: 20%;
+    width: 40%;
+  }
+  #page2 #middle #left #top {
+    height: 60%;
+  }
+  #page2 #middle #right #top {
+    width: 100%;
+    height: 100%;
+  }
+  #page2 #middle #right #bottom #left {
+    font-size: 1.9vw;
+  }
+  #page2 #middle #right #bottom #right {
+    font-size: 1.8vw;
+    font-weight: 600;
+  }
+  #page3 {
+    margin-top: -53vh;
+  }
+  #page3 #middle {
+    height: 70%;
+  }
+  #page3 #middle #left {
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+    position: relative;
+  }
+  #page3 #middle #left #top {
+    background-size: 100%;
+  }
+
+  #page3 #middle #left #bottom {
+    font-size: 1.7vw;
+  }
+  #page3 #middle #right {
+    background-position: 50% 10%;
+  }
+  #page4 {
+    margin-top: -32vh;
+  }
+  #page4 #middle {
+    height: 30%;
+  }
+  #page5 {
+    margin-top: -60vh;
+  }
+  #page5 > h1 {
+    font-size: 4vw;
+    margin-bottom: 5vh;
+  }
+  .elem {
+    height: 10vh;
+  }
+  .elem img {
+    width: 17vw;
+    height: 9vh;
+  }
+  .elem h5 {
+    font-size: 2vw;
+  }
+
+  .elem .elem-right h2 {
+    font-size: 4.1vw;
+    line-height: 4.5vw;
+  }
+  .elem .elem-right p {
+    font-size: 1.3vw;
+  }
+  #exclusive h2 {
+    font-size: 4.1vw;
+    line-height: 4.5vw;
+  }
+  #exclusive p {
+    font-size: 1.3vw;
+  }
+  #page6 {
+    height: 50vh;
+    margin-bottom: -13vh;
+    margin-top: -42vh;
+  }
+  #page6 #middle {
+    height: 65%;
+  }
+
+  #page6 #middle #right #left #top h4 {
+    font-size: 2vw;
+    line-height: 1.7vh;
+  }
+  #page6 #middle #right #right #top h4 {
+    font-size: 2vw;
+    line-height: 1.5vh;
+  }
+  #marque {
+    padding: 2vw;
+  }
+  #marque h1 {
+    font-size: 6vw;
+    margin-right: 20px;
+  }
+  @keyframes animation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 23px));
+    }
+  }
+  footer {
+    height: 30%;
+  }
+  footer h1 {
+    font-size: 6vw;
+    margin-left: 1.2vw;
+  }
+  footer h5 {
+    font-size: 2.5vw;
+  }
+  footer h5:nth-child(2) {
+    padding-top: 4.5vh;
+  }
+  footer h5:nth-child(3) {
+    padding-top: 4.5vh;
+  }
+  footer h5:nth-child(4) {
+    padding-top: 4.5vh;
+  }
+
+  footer #footer #middle #top p {
+    font-size: 4vw;
+  }
+  footer #footer #middle #bottom h4 {
+    font-size: 2.4vw;
+  }
 }
